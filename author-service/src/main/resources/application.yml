@@ -1,0 +1,9 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: author-service
+  jpa:
+    hibernate:
+      ddl-auto: none

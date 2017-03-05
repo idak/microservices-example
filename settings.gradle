@@ -1,0 +1,6 @@
+rootProject.name = 'microservices-example'
+
+include 'book-service'
+include 'author-service'
+include 'book-service'
+
