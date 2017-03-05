@@ -1,6 +1,0 @@
-spring:
-  application:
-    name: book-service
-  jpa:
-    hibernate:
-      ddl-auto: none

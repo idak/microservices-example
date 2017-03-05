@@ -7,13 +7,35 @@ An example project that demonstrates an end-to-end cloud-native platform using S
 
 # Mock Data
 
-The microservices use an H2 database, the data and schema are loaded from data.sql and schama.sql files located at src/main/resources.
+The microservices use an H2 database, the data and schema are loaded from data.sql and schama.sql files located at `src/main/resources`.
 
 
-# Run the Book microservice
+# Centralized Configuration
+
+The configuration is in git repository ![https://github.com/idak/microservices-config](https://github.com/idak/microservices-config) and all services consuming configuration from, the Spring Cloud Config Server.
+
+# Config Server
+
+To run the config server, execute:
+
+```sh
+
+/gradlew config-server:build && java -jar config-server/build/libs/config-server.jar
+
+
+```
+
+The config for book-service and author-service are available here :
+
+**Book cloud config :** [http://localhost:8888/book-service/master](http://localhost:8888/book-service/master)
+
+**Author cloud config :** [http://localhost:8888/author-service/master](http://localhost:8888/author-service/master)
+
+# Book microservice
 
 
 To run the book microservice, execute:
+
 
 ```sh
 
@@ -23,7 +45,7 @@ To run the book microservice, execute:
 
 The  REST Api is available here [http://localhost:8080](http://localhost:8080)
 
-# Run the Author microservice
+# Author microservice
 
 To run the book microservice, execute:
 
@@ -35,5 +57,16 @@ To run the book microservice, execute:
 
 The  REST Api is available here [http://localhost:8181](http://localhost:8080)
 
-@TODO
-Other components are in progress
+# Eureka Server
+**@TODO**
+
+# API Gateway
+**@TODO**
+
+# RabbitMQ and async Events
+**@TODO**
+
+# Docker
+**@TODO**
+
+
