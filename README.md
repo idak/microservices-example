@@ -2,7 +2,7 @@
 An example project that demonstrates an end-to-end cloud-native platform using Spring Cloud for building a practical microservices architecture.
 
 
-![https://github.com/idak/microservices-example/blob/v1.sprint.1/docs/archi-microservices.jpg](https://github.com/idak/microservices-example/blob/v1.sprint.1/docs/archi-microservices.jpg)
+![https://github.com/idak/microservices-example/blob/master/docs/archi-microservices.jpg](https://github.com/idak/microservices-example/blob/master/docs/archi-microservices.jpg)
 
 
 # Mock Data
