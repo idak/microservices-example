@@ -3,4 +3,5 @@ rootProject.name = 'microservices-example'
 include 'config-server'
 include 'book-service'
 include 'author-service'
+include 'eureka-server'
 
