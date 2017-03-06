@@ -51,7 +51,7 @@ To run the book microservice, execute:
 
 ```
 
-Check out the the book api :   [http://localhost:8080](http://localhost:8080)
+Check out the book api :   [http://localhost:8080](http://localhost:8080)
 
 # Author microservice
 
@@ -63,7 +63,7 @@ To run the book microservice, execute:
 
 ```
 
-Check out the the author api  [http://localhost:8181](http://localhost:8080)
+Check out the author api  [http://localhost:8181](http://localhost:8080)
 
 
 # API Gateway
