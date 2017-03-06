@@ -7,12 +7,12 @@ An example project that demonstrates an end-to-end cloud-native platform using S
 
 # Data Mock
 
-The microservices use an H2 database, the data and schema are loaded from [schama.sql](https://github.com/idak/microservices-example/blob/master/author-service/src/main/resources/schama.sql) and [data.sql](https://github.com/idak/microservices-example/blob/master/author-service/src/main/resources/data.sql) files located at `src/main/resources`.
+Microservices use an H2 database, schema and data are loaded from [schama.sql](https://github.com/idak/microservices-example/blob/master/author-service/src/main/resources/schama.sql) and [data.sql](https://github.com/idak/microservices-example/blob/master/author-service/src/main/resources/data.sql) files located at `src/main/resources`.
 
 
 # Centralized Configuration (Config Server)
 
-The configuration is in git repository [https://github.com/idak/microservices-config](https://github.com/idak/microservices-config) and all services consuming configuration from, the Spring Cloud Config Server.
+The configuration is in a git repository [https://github.com/idak/microservices-config](https://github.com/idak/microservices-config) and all services consuming configuration from, the Spring Cloud Config Server.
 
 To run the config server, execute:
 
