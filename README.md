@@ -30,7 +30,7 @@ You can confirm that the Config Server is up by visiting :
 **Author cloud config :** [http://localhost:8888/author-service/master](http://localhost:8888/author-service/master)
 
 
-# Service Registration and Discovery (Eureka Server)
+# Service Registration (Eureka Server)
 
 To run the config server, execute:
 
