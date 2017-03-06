@@ -59,15 +59,45 @@ To run the book microservice, execute:
 
 ```sh
 
-./gradlew author-service:build && java -jar author-service/build/libs/author-service-0.1.0.jar
+./gradlew author-service:build && java -jar author-service/build/libs/author-service-0.1.0.jar --server.port=8181
 
 ```
 
-Check out the author api  [http://localhost:8181](http://localhost:8080)
+Check out the author api  [http://localhost:8181](http://localhost:8181)
 
 
-# API Gateway
-**@TODO**
+# (Routing and Filtering) API Gateway
+
+This API use Netflix Zuul to forward requests to all microservices, to run it, execute :
+
+```sh
+
+./gradlew api-gateway:build && java -jar api-gateway/build/libs/api-gateway-0.1.0.jar --server.port=9090
+
+```
+
+Now, author and book services are avialable at : [http://localhost:9090/books](http://localhost:9090/books) and [http://localhost:9090/authors](http://localhost:9090/authors)
+
+
+To scale book service, use a different port for each instance :
+
+```sh
+
+java -jar book-service/build/libs/book-service-0.1.0.jar --server.port=8282
+
+java -jar book-service/build/libs/book-service-0.1.0.jar --server.port=8383
+
+```
+
+To scale author service, execute : 
+
+```sh
+
+java -jar author-service/build/libs/author-service-0.1.0.jar --server.port=8484
+
+java -jar author-service/build/libs/author-service-0.1.0.jar --server.port=8585
+
+```
 
 # RabbitMQ and async Events
 **@TODO**
