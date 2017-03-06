@@ -12,7 +12,7 @@ Microservices use an H2 database, schema and data are loaded from [schama.sql](h
 
 # Centralized Configuration (Config Server)
 
-The configuration is in a git repository [https://github.com/idak/microservices-config](https://github.com/idak/microservices-config) and all services consuming configuration from, the Spring Cloud Config Server.
+The configuration is in a git repository [https://github.com/idak/microservices-config](https://github.com/idak/microservices-config) and all services consuming configuration from the Spring Cloud Config Server.
 
 To run the config server, execute:
 
