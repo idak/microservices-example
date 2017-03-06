@@ -18,7 +18,7 @@ To run the config server, execute:
 
 ```sh
 
-./gradlew config-server:build && java -jar config-server/build/libs/config-server.jar
+./gradlew config-server:build && java -jar config-server/build/libs/config-server-0.1.0.jar
 
 
 ```
@@ -35,7 +35,7 @@ You can confirm that the Config Server is up by visiting :
 To run the config server, execute:
 
 ```sh
-./gradlew eureka-server:build && java -jar eureka-server/build/libs/eureka-server.jar
+./gradlew eureka-server:build && java -jar eureka-server/build/libs/eureka-server-0.1.0.jar
 ```
 
 
@@ -47,7 +47,7 @@ To run the book microservice, execute:
 
 ```sh
 
-./gradlew book-service:build && java -jar book-service/build/libs/book-service.jar
+./gradlew book-service:build && java -jar book-service/build/libs/book-service-0.1.0.jar
 
 ```
 
@@ -59,7 +59,7 @@ To run the book microservice, execute:
 
 ```sh
 
-./gradlew author-service:build && java -jar author-service/build/libs/author-service.jar
+./gradlew author-service:build && java -jar author-service/build/libs/author-service-0.1.0.jar
 
 ```
 
