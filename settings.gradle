@@ -4,4 +4,5 @@ include 'config-server'
 include 'book-service'
 include 'author-service'
 include 'eureka-server'
+include 'api-gateway'
 
